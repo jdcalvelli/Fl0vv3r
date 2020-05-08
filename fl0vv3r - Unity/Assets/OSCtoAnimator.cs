@@ -35,7 +35,6 @@ namespace extOSC.Examples
     protected void MessageReceived(OSCMessage message)
     {
       Debug.Log(message);
-      message = m_Animator.speed;
     }
 
   }

@@ -1,1 +1,14 @@
-<root />
+<root>
+  <message info="Receiver: 12345. From: 127.0.0.1:49605" type="Received">
+    <packet>L2Zsb3dlcgAsaQAAAAAAAA==</packet>
+  </message>
+  <message info="Receiver: 12345. From: 127.0.0.1:49605" type="Received">
+    <packet>L2Zsb3dlcgAsaQAAAAAAAQ==</packet>
+  </message>
+  <message info="Receiver: 12345. From: 127.0.0.1:49605" type="Received">
+    <packet>L2Zsb3dlcgAsaQAAAAAAAA==</packet>
+  </message>
+  <message info="Receiver: 12345. From: 127.0.0.1:49605" type="Received">
+    <packet>L2Zsb3dlcgAsaQAAAAAAAQ==</packet>
+  </message>
+</root>

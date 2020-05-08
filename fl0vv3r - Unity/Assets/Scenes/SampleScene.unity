@@ -344,7 +344,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!65 &1634066503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -428,7 +428,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703644272}
-  - component: {fileID: 1703644271}
   - component: {fileID: 1703644270}
   m_Layer: 0
   m_Name: OSC Manager
@@ -452,34 +451,10 @@ MonoBehaviour:
   _autoConnect: 1
   _closeOnPause: 0
   _mapBundle: {fileID: 0}
-  _workInEditor: 0
+  _workInEditor: 1
   _localHostMode: 0
-  _localHost: 192.168.7.102
+  _localHost: localhost
   _localPort: 12345
---- !u!114 &1703644271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703644269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 464088183d2a1484ab8fb64e356c9f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _autoConnect: 1
-  _closeOnPause: 0
-  _mapBundle: {fileID: 0}
-  _workInEditor: 0
-  _localHostMode: 0
-  _localPortMode: 2
-  _localReceiver: {fileID: 0}
-  _localHost: 192.168.7.102
-  _localPort: 7000
-  _remoteHost: 127.0.0.1
-  _remotePort: 7000
-  _useBundle: 0
 --- !u!4 &1703644272
 Transform:
   m_ObjectHideFlags: 0

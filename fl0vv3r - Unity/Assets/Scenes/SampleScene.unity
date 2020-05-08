@@ -432,7 +432,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1703644269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbba286dc10e549b2bdec947ef8dbd3b, type: 3}
   m_Name: 
@@ -709,6 +709,7 @@ GameObject:
   - component: {fileID: 5006512736296202712}
   - component: {fileID: 1543428804}
   - component: {fileID: 8296172668243248076}
+  - component: {fileID: 8296172668243248077}
   m_Layer: 0
   m_Name: Flower (Quaternius)
   m_TagString: Untagged
@@ -723,7 +724,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668243248075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5937ce4de6a4254b9249339eea0c2a, type: 3}
   m_Name: 
@@ -745,6 +746,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8296172668243248077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668243248075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e97376d4ba79e449e708079c36a224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8829897422791695557
 Transform:
   m_ObjectHideFlags: 0

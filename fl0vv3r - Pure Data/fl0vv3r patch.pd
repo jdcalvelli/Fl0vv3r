@@ -1,4 +1,4 @@
-#N canvas 103 79 1456 804 10;
+#N canvas 380 37 1456 804 10;
 #X obj 387 179 cnv 15 100 22 empty empty empty 20 12 0 14 -253938 -66577
 0;
 #X obj 559 283 cnv 15 85 22 empty empty empty 20 12 0 14 -253938 -66577
@@ -931,19 +931,26 @@
 #X obj 705 75 import pduino;
 #X obj 82 546 send toOSC;
 #X obj 898 92 import mrpeach;
-#X obj 900 237 packOSC;
 #X obj 904 328 udpsend;
-#X msg 900 197 /flower \$1;
-#X msg 958 262 connect localhost 12345;
 #X msg 959 293 disconnect;
 #X text 1007 94 osc library;
 #X obj 904 367 tgl 17 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X text 941 367 is it sending?;
-#X text 981 195 osc address and value to be sent;
+#X text 1025 194 osc address and value to be sent;
 #X text 1117 261 connect local comp on port 12345;
-#X floatatom 898 150 5 0 0 0 - - -, f 5;
 #X text 949 147 test value;
+#X obj 903 446 udpreceive 12345;
+#X obj 904 480 unpackOSC;
+#X msg 958 262 connect localhost 12345;
+#X text 941 367 is it connected?;
+#X obj 900 237 packOSC;
+#X obj 853 515 print;
+#X obj 904 516 routeOSC /flower;
+#X floatatom 905 549 5 0 0 0 - - -, f 5;
+#X text 1018 445 testing receive;
+#X msg 900 197 send /flower \$1;
+#X msg 848 150 1;
+#X msg 898 153 0;
 #X connect 3 0 83 0;
 #X connect 3 1 5 0;
 #X connect 5 0 51 0;
@@ -1001,9 +1008,14 @@
 #X connect 83 0 51 0;
 #X connect 85 0 51 0;
 #X connect 86 0 51 0;
-#X connect 90 0 91 0;
-#X connect 91 0 96 0;
-#X connect 92 0 90 0;
-#X connect 93 0 91 0;
-#X connect 94 0 91 0;
-#X connect 100 0 92 0;
+#X connect 90 0 93 0;
+#X connect 91 0 90 0;
+#X connect 97 0 98 0;
+#X connect 98 0 102 0;
+#X connect 98 0 103 0;
+#X connect 99 0 90 0;
+#X connect 101 0 90 0;
+#X connect 103 0 104 0;
+#X connect 106 0 101 0;
+#X connect 107 0 106 0;
+#X connect 108 0 106 0;
